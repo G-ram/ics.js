@@ -6,18 +6,18 @@ ical.js is a small piece of Javascript code, which generates for download ical c
 
 git clone https://github.com/G-ram/ics.js
 
-```javascript
+```html
 <script src="ical.js"></script>
 ```
 
 ###Dependencies
 
 Blob.js - [Github](https://github.com/eligrey/Blob.js/)
-```javascript
+```html
 	<script src="http://rawgithub.com/eligrey/Blob.js/master/Blob.js"></script>
 ```
 Filesaver.js - [Github](https://github.com/eligrey/FileSaver.js/)
-```javascript
+```html
 	<script src="http://rawgithub.com/eligrey/FileSaver.js/master/FileSaver.js"></script>
 ```
 
