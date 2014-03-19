@@ -25,15 +25,18 @@ Filesaver.js - [Github](https://github.com/eligrey/FileSaver.js/)
 ## Example
 
 ```javascript
-var cal = new calendar("g-ram//");
+var cal = new calendar("g-ram//calendar");
 
 cal.addEvent({
-	start: new Date(),
-	end: new Date(new Date().getTime() + 3600000),
-	summary: 'Example Event',
-	description: 'It works ;)',
-	location: 'my room',
-	url: 'http://sebbo.net/'
+	UID: "RaNd0mN0nSeNSe"
+	DTSTART: new Date(),
+    DTEND: new Date(new Date().getTime() + 3600000),
+    SUMMARY: "Test Event",
+    DESCRIPTION: "This is a test",
+    LOCATION: "Hamilton 406",
+    ORGANIZER: "Me",
+    URL: "http://www.snazzystudios.com",
+    RRULE: "FREQ=WEEKLY;UNTIL="+ICSFormatDate(new Date().getTime() + 3600000)
 });
 
 cal.download("MyCalendar")
