@@ -4,22 +4,22 @@ ical.js is a small piece of Javascript code, which generates for download ical c
 
 ## Installation
 
-	git clone https://github.com/G-ram/ics.js
+git clone https://github.com/G-ram/ics.js
 
-	```javascript
-	<script src="ical.js"></script>
-	```
+```javascript
+<script src="ical.js"></script>
+```
 
-	###Dependencies
+###Dependencies
 
-		Blob.js - [Github](https://github.com/eligrey/Blob.js/)
-		```javascript
-			<script src="http://rawgithub.com/eligrey/Blob.js/master/Blob.js"></script>
-		```
-		Filesaver.js - [Github](https://github.com/eligrey/FileSaver.js/)
-		```javascript
-			<script src="http://rawgithub.com/eligrey/FileSaver.js/master/FileSaver.js"></script>
-		```
+Blob.js - [Github](https://github.com/eligrey/Blob.js/)
+```javascript
+	<script src="http://rawgithub.com/eligrey/Blob.js/master/Blob.js"></script>
+```
+Filesaver.js - [Github](https://github.com/eligrey/FileSaver.js/)
+```javascript
+	<script src="http://rawgithub.com/eligrey/FileSaver.js/master/FileSaver.js"></script>
+```
 
 
 ## Example
@@ -86,9 +86,9 @@ Reset the calender object.
 
 ### ICSFormatDate(d,dateOnly)
 Formats any date object into the format that .ics files require.
-	```javascript
-	ICSFormatDate(new Date(2014,5,1));
-	```
+```javascript
+ICSFormatDate(new Date(2014,5,1));
+```
 
 
 ##Browser Support
