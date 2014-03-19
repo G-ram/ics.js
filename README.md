@@ -48,32 +48,32 @@ Use this method to create a new calendar object. PRODID is a string that represe
 ### addEvent(options)
 Add an event. Options is an plain object, that configure the event.
 
-	#### options.UID (String)
-	Event UID. If not set, an UID will be generated randomly.
+#### options.UID (String)
+Event UID. If not set, an UID will be generated randomly.
 
-	#### options.DTSTART (Date Object, required)
-	Appointment date of beginning
+#### options.DTSTART (Date Object, required)
+Appointment date of beginning
 
-	#### options.DTEND (Date Object, required)
-	Appointment date of end
+#### options.DTEND (Date Object, required)
+Appointment date of end
 
-	#### options.SUMMARY (String)
-	Appointment summary
+#### options.SUMMARY (String)
+Appointment summary
 
-	#### options.DESCRIPTION (String)
-	Appointment description
+#### options.DESCRIPTION (String)
+Appointment description
 
-	#### options.LOCATION (String)
-	Appointment location
+#### options.LOCATION (String)
+Appointment location
 
-	#### options.ORGANIZER (String)
-	Appointment organizer
+#### options.ORGANIZER (String)
+Appointment organizer
 
-	#### options.RRULE (String)
-	Recurrence rule (see documentation on ICS files for more information)
+#### options.RRULE (String)
+Recurrence rule (see documentation on ICS files for more information)
 
-	#### options.URL (String)
-	Appointment Website
+#### options.URL (String)
+Appointment Website
 
 ### download(filename)
 Downloads the ics file. "filename" is a string that is the name of the ics file to be downloaded. The program will automatically tack on an ".ics" ending to the filename.
@@ -108,4 +108,4 @@ Supported Browsers
 | Safari 6.1+*   | Blob          | No           | ?             | None         |
 | Safari < 6     | data: URI     | No           | n/a           | [Blob.js](https://github.com/eligrey/Blob.js) |
 
-###Note: Safari may not support this library entirely
+###Note: Safari may not entirely support this library 
