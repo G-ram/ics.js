@@ -8,7 +8,7 @@ ical.js is a small piece of Javascript code, which generates for download ical c
 
 	```javascript
 	<script src="ical.js"></script>
-	````
+	```
 
 	###Dependencies
 
