@@ -48,32 +48,32 @@ function ICS(PRODID){
 		}else if(typeof options.SUMMARY != 'undefined'){
 			console.log("Summary is not a string");
 		}
-		if(typeof options.LOCATION != 'undefined'){
+		if(typeof options.LOCATION != 'undefined' && typeof options.LOCATION == 'string'){
 			currentEvent += "LOCATION:"+options.LOCATION+"\n";
 		}else if(typeof options.LOCATION != 'undefined'){
 			console.log("Location is not a string");
 		}
-		if(typeof options.DESCRIPTION != 'undefined'){
+		if(typeof options.DESCRIPTION != 'undefined' && typeof options.DESCRIPTION == 'string'){
 			currentEvent += "DESCRIPTION:"+options.DESCRIPTION+"\n";
 		}else if(typeof options.DESCRIPTION != 'undefined'){
 			console.log("Description is not a string");
 		}
-		if(typeof options.URL != 'undefined'){
+		if(typeof options.URL != 'undefined' && typeof options.URL == 'string'){
 			currentEvent += "URL:"+options.URL+"\n";
 		}else if(typeof options.URL != 'undefined'){
 			console.log("URL is not a string");
 		}
-		if(typeof options.ORGANIZER != 'undefined'){
+		if(typeof options.ORGANIZER != 'undefined' && typeof options.ORGANIZER == 'string'){
 			currentEvent += "ORGANIZER:"+options.ORGANIZER+"\n";
 		}else if(typeof options.ORGANIZER != 'undefined'){
 			console.log("Organizer is not a string");
 		}
-		if(typeof options.EXDATE != 'undefined'){
+		if(typeof options.EXDATE != 'undefined' && typeof options.EXDATE == 'string'){
 			currentEvent += "EXDATE:"+options.EXDATE+"\n";
 		}else if(typeof options.EXDATE != 'undefined'){
 			console.log("EXDATE is not a string");
 		}
-		if(typeof options.RRULE != 'undefined'){
+		if(typeof options.RRULE != 'undefined' && typeof options.RRULE == 'string'){
 			currentEvent += "RRULE:"+options.RRULE+"\n";
 		}else if(typeof options.RRULE != 'undefined'){
 			console.log("Recurence Rule is not a string");
