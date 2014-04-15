@@ -36,6 +36,7 @@ cal.addEvent({
     LOCATION: "Hamilton 406",
     ORGANIZER: "Me",
     URL: "http://www.snazzystudios.com",
+    EXDATE: ICSFormatDate(new Date().getTime() - 1200000)+","+ICSFormatDate(new Date().getTime() + 4800000),
     RRULE: "FREQ=WEEKLY;UNTIL="+ICSFormatDate(new Date().getTime() + 3600000)
 });
 
@@ -71,6 +72,9 @@ Appointment location
 
 #### options.ORGANIZER (String)
 Appointment organizer
+
+#### options.EXDATE (String)
+List of dates to exclude for a repeated event (see documentation on ICS files for more information)
 
 #### options.RRULE (String)
 Recurrence rule (see documentation on ICS files for more information)
