@@ -68,7 +68,6 @@ function ICS(PRODID){
 		}else if(typeof options.ORGANIZER != 'undefined'){
 			console.log("Organizer is not a string");
 		}
-		console.log(options.EXDATE);
 		if(typeof options.EXDATE == 'string'){
 			currentEvent += "EXDATE:"+options.EXDATE+"\n";
 		}else if(typeof options.EXDATE != 'undefined'){
