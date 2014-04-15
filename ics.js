@@ -26,54 +26,54 @@ function ICS(PRODID){
 		var currentTime = new Date();
 		var currentEvent = "BEGIN:VEVENT\n";
 		currentEvent += "CREATED:"+ICSFormatDate(new Date())+"\n";
-		if(typeof options.UID != 'undefined' && typeof options.UID == 'string'){
+		if(typeof options.UID == 'string'){
 			currentEvent += "UID:"+options.UID+"\n"; 
 		}else{
 			currentEvent += "UID:"+("0000" + (Math.random()*Math.pow(36,4) << 0).toString(36)).substr(-4);
 			currentEvent += "\n";
 		}
-		if(typeof options.DTSTART != 'undefined' && Object.prototype.toString.call(options.DTSTART) == '[object Date]'){
+		if(Object.prototype.toString.call(options.DTSTART) == '[object Date]'){
 			currentEvent += "DTSTART:"+ICSFormatDate(options.DTSTART)+"\n"; 
 		}else{
 			console.log("Start time has either not been set or is not a date object");
 		}
-		if(typeof options.DTEND != 'undefined' && Object.prototype.toString.call(options.DTEND) == '[object Date]'){
+		if(Object.prototype.toString.call(options.DTEND) == '[object Date]'){
 			currentEvent += "DTEND:"+ICSFormatDate(options.DTEND)+"\n"; 
 		}else{
 			console.log("End time has either not been set or is not a date object");
 		}
 		currentEvent += "DTSTAMP:"+ICSFormatDate(new Date())+"\n";
-		if(typeof options.SUMMARY != 'undefined' && typeof options.SUMMARY == 'string'){
+		if(typeof options.SUMMARY == 'string'){
 			currentEvent += "SUMMARY:"+options.SUMMARY+"\n";
 		}else if(typeof options.SUMMARY != 'undefined'){
 			console.log("Summary is not a string");
 		}
-		if(typeof options.LOCATION != 'undefined' && typeof options.LOCATION == 'string'){
+		if(typeof options.LOCATION == 'string'){
 			currentEvent += "LOCATION:"+options.LOCATION+"\n";
 		}else if(typeof options.LOCATION != 'undefined'){
 			console.log("Location is not a string");
 		}
-		if(typeof options.DESCRIPTION != 'undefined' && typeof options.DESCRIPTION == 'string'){
+		if(typeof options.DESCRIPTION == 'string'){
 			currentEvent += "DESCRIPTION:"+options.DESCRIPTION+"\n";
 		}else if(typeof options.DESCRIPTION != 'undefined'){
 			console.log("Description is not a string");
 		}
-		if(typeof options.URL != 'undefined' && typeof options.URL == 'string'){
+		if(typeof options.URL == 'string'){
 			currentEvent += "URL:"+options.URL+"\n";
 		}else if(typeof options.URL != 'undefined'){
 			console.log("URL is not a string");
 		}
-		if(typeof options.ORGANIZER != 'undefined' && typeof options.ORGANIZER == 'string'){
+		if(typeof options.ORGANIZER == 'string'){
 			currentEvent += "ORGANIZER:"+options.ORGANIZER+"\n";
 		}else if(typeof options.ORGANIZER != 'undefined'){
 			console.log("Organizer is not a string");
 		}
-		if(typeof options.EXDATE != 'undefined' && typeof options.EXDATE == 'string'){
+		if(typeof options.EXDATE == 'string'){
 			currentEvent += "EXDATE:"+options.EXDATE+"\n";
 		}else if(typeof options.EXDATE != 'undefined'){
-			console.log("EXDATE is not a string");
+			console.log("Excepted dates are not a string");
 		}
-		if(typeof options.RRULE != 'undefined' && typeof options.RRULE == 'string'){
+		if(typeof options.RRULE == 'string'){
 			currentEvent += "RRULE:"+options.RRULE+"\n";
 		}else if(typeof options.RRULE != 'undefined'){
 			console.log("Recurence Rule is not a string");
