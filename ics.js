@@ -27,18 +27,18 @@ function ICS(PRODID){
 		var currentEvent = "BEGIN:VEVENT\n";
 		currentEvent += "CREATED:"+ICSFormatDate(new Date())+"\n";
 		if(typeof options.UID == 'string'){
-			currentEvent += "UID:"+options.UID+"\n"; 
+			currentEvent += "UID:"+options.UID+"\n";
 		}else{
 			currentEvent += "UID:"+("0000" + (Math.random()*Math.pow(36,4) << 0).toString(36)).substr(-4);
 			currentEvent += "\n";
 		}
 		if(Object.prototype.toString.call(options.DTSTART) == '[object Date]'){
-			currentEvent += "DTSTART:"+ICSFormatDate(options.DTSTART)+"\n"; 
+			currentEvent += "DTSTART:"+ICSFormatDate(options.DTSTART)+"\n";
 		}else{
 			console.log("Start time has either not been set or is not a date object");
 		}
 		if(Object.prototype.toString.call(options.DTEND) == '[object Date]'){
-			currentEvent += "DTEND:"+ICSFormatDate(options.DTEND)+"\n"; 
+			currentEvent += "DTEND:"+ICSFormatDate(options.DTEND)+"\n";
 		}else{
 			console.log("End time has either not been set or is not a date object");
 		}
@@ -54,7 +54,7 @@ function ICS(PRODID){
 			console.log("Location is not a string");
 		}
 		if(typeof options.DESCRIPTION == 'string'){
-			currentEvent += "DESCRIPTION:"+options.DESCRIPTION+"\n";
+			currentEvent += "DESCRIPTION:"+options.DESCRIPTION.replace('\n', '\\n')+"\n";
 		}else if(typeof options.DESCRIPTION != 'undefined'){
 			console.log("Description is not a string");
 		}

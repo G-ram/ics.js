@@ -25,7 +25,7 @@ Filesaver.js - [Github](https://github.com/eligrey/FileSaver.js/)
 ## Example
 
 ```javascript
-var cal = new calendar("g-ram//calendar");
+var cal = new ICS("g-ram//calendar");
 
 cal.addEvent({
 	UID: "RaNd0mN0nSeNSe"
@@ -115,4 +115,4 @@ Supported Browsers
 | Safari 6.1+*   | Blob          | No           | ?             | None         |
 | Safari < 6     | data: URI     | No           | n/a           | [Blob.js](https://github.com/eligrey/Blob.js) |
 
-###Note: Safari may not entirely support this library 
+###Note: Safari may not entirely support this library
